@@ -26,7 +26,7 @@ public class Array9 {
 			w++;
 		} while (w == 0);
 
-		//System.out.println(Arrays.toString(newdata));
+		System.out.println(Arrays.toString(newdata));
 		
 		
 		
