@@ -38,8 +38,7 @@ public class Double_loop1 {
 		 System.out.println(b);
 		 double c = money - b;
 		 System.out.println(c);
-		 */
-		
+		 
 		int money = 100000;
 		 int coupon = 20;
 		 double a = coupon * 0.01;
@@ -48,7 +47,18 @@ public class Double_loop1 {
 		 System.out.println(b);
 		 double c = money - b;
 		 System.out.println(c);
-		 
+		 */
+		
+		int f,ff;
+		int total;
+		for(f=1;f<=3;f++) {
+			//System.out.println(f);
+			for(ff=1;ff<=4;ff++) {
+				total = f+ff;
+				System.out.println(f + "+" +ff);
+				}
+			
+		}
 	}
 
 }
