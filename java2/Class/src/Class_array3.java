@@ -20,7 +20,8 @@ public class Class_array3 {
 		String usernm = sc.next();  //사용자가 입력한 데이터 usernm
 		
 		jumsu j = new jumsu();
-		j.ck(a1,a2,usernm);
+		j.ck(a1,a2,usernm);  //매개 변수
+		//j.ck(1,2,3) = 인수값(인자값)
 		
 		
 }
@@ -28,9 +29,23 @@ public class Class_array3 {
 }
 
 class jumsu{
-	public void ck(String data1[],String data2[],String user) {
+	//메소드에 ()안에 값
+	public void ck(String data1[],String data2[],String user) {  //매개변수
 		//System.out.println(Arrays.toString(data1));
-		System.out.println(user);
+		int w = 0;
+		int ea = data1.length;
+		boolean ck = false;
+		do {
+			if(user.equals(data1[w])) {    //배열에 동일한 값이 있을 경우
+			String js = data2[w];
+			System.out.printf("%s님은 %s점 입니다.",user,js);
+				ck = true;
+			}
+			w++;
+		}while(w<ea);
+		if(ck==false) { //main class에서 사용자 검색을 하였을 경우 배열값에 없는 상황
+			System.out.println("검색하고자 하는 사용자 확인이 안됩니다.");
+		}
 	}
 }
 
