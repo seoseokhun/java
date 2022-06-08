@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 public class Method9 {
 
@@ -11,15 +12,68 @@ public class Method9 {
 		결과: [로켓배송,로켓프레시,골드박스,이벤트,추석]
 		단, private 및 return을 활용하여 프로그램을 작성합니다.
 		 */
-
+		menus me = new menus();
+		//결과출력
+		System.out.println(Arrays.toString(me.get()));
+		
 	}
 
 }
+
 class menus{
+	private String mdata[][];
+	private String rdata[];
+	String a;
 	public menus() {
 		String ms[][] = {
 				{"로켓배송","로켓프레시","쿠팡비즈","골드박스","이벤트","설날","추석"},
 				{"Y","Y","N","Y","Y","N","Y"}
 		};
+		this.mdata = ms;
+		redata();
+		//System.out.println((this.mdata[0][5]));
 	}
+	
+	public void redata() {
+		//System.out.println(Arrays.toString(this.mdata[0]));
+		int ea = this.mdata[0].length;
+		String ww[] = new String[ea];
+		int w=0;
+		int ct = 0;
+		do {
+			if(this.mdata[1][w].equals("Y")) {
+				ww[ct] = this.mdata[0][w];
+				ct++;
+			}
+			
+			w++;
+		}while(w<ea);
+		
+		this.rdata = ww;
+	}
+	
+	public String[] get() {
+		return this.rdata;
+	}
+	
+	
 }
+
+
+
+/*
+  class  aaa {
+ 
+  int a;
+  String b;          -> field
+        public aaa() { -> comstructor
+        
+  }     
+        -> method
+       public void
+       public static void
+       public String abc
+       */
+
+
+

@@ -9,7 +9,6 @@ public class Method8 {
 		 */
 		odbc od = new odbc();
 		System.out.println(od.aaa());
-
 	}
 
 }
