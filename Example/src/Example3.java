@@ -1,33 +1,31 @@
-import java.util.Scanner;
 
 public class Example3 {
 
 	public static void main(String[] args) {
-		/*
-		 응용문제3.
-		 사용자가 해당 값을 입력합니다.
-		 단 사용자 두개의 숫자를 입력하되 첫번째 숫자와 두번째 숫자 범위
-		 안에 있는 모든 숫자를 더해서 결과값이 나오도록 제작하시오.
-		 단, 해당 코드는 do~while 작성합니다.
-		 
-		 예시)
-		 첫번째 범위 숫자는? 5
-		 두번째 범위 숫자는? 10
-		 범위 숫자 모든 합계는 : 45 입니다.
-		 */
-		Scanner sc = new Scanner(System.in);
-		System.out.println("첫번째 숫자를 입력하세요");
-		int a = sc.nextInt();
-		System.out.print("두번째 범위 숫자는?");
-		int b = sc.nextInt();
-		int total = 0;
-		do {
-			total = total + a;
-			a++;
-		
-		}while(a <= b);
-		System.out.printf("최종 범위의 합계치는:%d",total);
-		sc.close();
+		inherit2 ih2 = new inherit2();
+		ih2.it("홍길동", "aaa5");
+		ih2.print();
+
 	}
 
+}
+
+class inherit1{//결과를 받는 역활
+	private String nm; //inherit1 해당 부분에서만 작동
+	protected String pw; //inherit1, inherit2에서 모두 작동 되도록 하며, 외부에서 로드 못함
+	public String aa;  
+	// private으로 받은 부분을 inherit2에서도 사용할 수 있도록 하기 위함
+	
+	public void it(String d1,String d2) {
+		this.nm=d1;
+		this.pw=d2;
+		this.aa = this.nm;
+	}
+}
+
+class inherit2 extends inherit1 {//결과를 출력하는 역활
+	
+	public void print() {
+		System.out.println(this.aa + "" + this.pw);
+	}
 }

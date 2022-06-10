@@ -3,30 +3,12 @@ import java.util.Scanner;
 public class Test1 {
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("첫번째 숫자값을 입력하세요");
-		int user1 = sc.nextInt();
+		String a = "서울시 서대문구";
+		String b = "1234";
 		
-		Scanner sc2 = new Scanner(System.in);
-		System.out.println("두번째 숫자값을 입력하세요?");
-		int user2 = sc2.nextInt();
-		
-		int user3 = user1 * user2;
-		if(user3 < 100) {
-			System.out.println("100이하의 결과값입니다.");
-		}
-		else {
-			System.out.println("100이상의 결과값입니다.");
-		}
-		sc.close();
-		sc2.close();
-				
+		System.out.printf("주소:"+a,"전화번호:"+b);
 		
 		
-		
-		 
-		 
-
 	}
 
 }
