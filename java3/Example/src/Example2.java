@@ -1,38 +1,30 @@
-import java.util.Arrays;
 
 public class Example2 {
-
-	public static void main(String[] args) {
-		/*
-		 배열 + 기본(클래스)메소드 문제
-		 product : 수박, 참외, 사과, 배 , 딸기, 키위, 바나나, 망고 중
-		 참외, 배 , 키위를 삭제 하였습니다.
-		 해당 삭제 후 배열을 다시 재 리스트 하는 코드를
-		 작성하시오.
-		 단, 해당 처리사항은 모두 별도의 메소드에서 처리가 되어야 하며
-		 반복문은 Free 입니다.
-		 [결과] : [수박,사과,딸기,바나나,망고]
-		 */
-		String product[] = {"수박","참외","사과","배","딸기","키위","바나나","망고"};
-		
-		lists(product);
-
-	}
-	public static void lists(String pd[]) {
-		int ea = pd.length;
-		int no = 5;
-		String newproduct[] = new String[no];
-		int idx = 0;
-		for(String p : pd) {
-			if(!p.equals("참외")&& ! p.equals("배")&&!p.equals("키위")) {
-
-				newproduct[idx] = p;
-				idx++;
-			}
+	
+	private int val1; //pc
+	private int val2; //user
+	private String msg; //결과메세지
+	
+	public void randomck(int pc, int user) {  //setter(인수값)
+		this.val1 = pc;
+		this.val1 = user;
+		if(this.val1 > this.val2) {
+			this.msg = "Up 입니다.";
 		}
-		System.out.println(Arrays.toString(newproduct));
-		
-		
+		else if(this.val1 < this.val2) {
+			this.msg = "Down 입니다.";
+		}
+		else {
+			this.msg = "정답 입니다.";
+			
+		}
 	}
-
+	
+	
+	
+	public String result() { //getter (인수값X) return
+		
+		return this.msg;
+	}
 }
+
