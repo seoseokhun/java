@@ -56,4 +56,6 @@ class card{
 		 * 5.java에 대한 설명 중 잘못 된것은? (java의 역사 x, java특징 o)
 		 * 
 		 * 6. 다음 문법 코드 중 잘못된 부분은?
+		 
+		 시험 사이트 http://mekeyace.dothome.co.kr/javatest.txt
 		 */
