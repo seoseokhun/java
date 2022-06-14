@@ -11,7 +11,7 @@ public class Test2 {
 		int a,aa;
 		for(a=0;a<3;a++) {//3
 			System.out.println(array[0][a]);
-			for(aa=0;aa<3;aa++) { //4
+			for(aa=0;aa<3;aa++) { //3
 				System.out.println(array[a+1][aa]);
 				
 			}

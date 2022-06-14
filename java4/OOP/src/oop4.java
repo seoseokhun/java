@@ -15,11 +15,11 @@ public class oop4 {
 
 abstract class ab_1{ //추상 클래스 (외부에서 로드가 절대 안됨) - 자체 실행(X)
 	public int c;
-	public void abc_a() { //free   (인수값 없는 추상 메소드) - 사용해도 되고 안해도 되고
-		this.c = 123456;
-		
+	public void abc_a() { //free (인수값 없는 추상 메소드) - 사용해도 되고 안해도 되고
+		this.c = 123456;	
 	}
 	public void ab_a(int a) { //free (인수값 받는 추상 메소드)	
+		
 	}
 	
 	public abstract void ab_c(); //free 구성 무조건 자식 클래스 사용

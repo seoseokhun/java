@@ -7,7 +7,7 @@ public class oop6 {
 		b[0].dataload();
 		b[1].dataload();
 		*/
-		/*//foreach 단점 특정 class를 중지 하지는 못합니다.
+		/*foreach 단점 특정 class를 중지 하지는 못합니다.
 		 * 
 		for(box z : b) {
 			z.dataload();
