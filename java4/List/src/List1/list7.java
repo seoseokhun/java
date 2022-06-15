@@ -19,6 +19,9 @@ public class list7 {
 				   {3,6,9,12,15,17,19}
 				 };
 		LinkedList<Integer> it = new LinkedList<>();
+		for(int f=1;f<data[0].length;) {
+			
+		}
 
 	}
 
