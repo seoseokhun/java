@@ -2,53 +2,59 @@
 public class Test4 {
 
 	public static void main(String[] args) {
-		
-	
 		/*
-		 * ÀÀ¿ë¹®Á¦ ¿ÜºÎ class¸¦ ÀÌ¿ëÇÏ¿© ÇØ´ç ¸Ş¼Òµå °ªÀ» Ãâ·ÂÇÕ´Ï´Ù.
-		 * ¿ÜºÎ class ¸í books ÀÌ¸ç, ¾È¿¡ ¸Ş¼Òµå´Â ÃÑ 3°³ÀÇ ¸Ş¼Òµå°¡ Á¸Àç ÇÕ´Ï´Ù.
-		 * ¸Ş¼Òµå¸í °¢°¢ book1, book2, book3 À¸·Î ÀÌ·ç¾îÁ® ÀÖ½À´Ï´Ù.
-		 * book1Àº È£Ãâ½Ã "book1¸Ş¼Òµå"¶ó°í Ãâ·Â
-		 * book2Àº È£Ãâ½Ã "book2¸Ş¼Òµå"¶ó°í Ãâ·Â
-		 *book3Àº È£Ãâ½Ã "book3¸Ş¼Òµå"¶ó°í Ãâ·Â
+		 * ì‘ìš©ë¬¸ì œ ì™¸ë¶€ classë¥¼ ì´ìš©í•˜ì—¬ í•´ë‹¹ ë©”ì†Œë“œ ê°’ì„ ì¶œë ¥í•©ë‹ˆë‹¤.
+		 * ì™¸ë¶€ class ëª… books ì´ë©°, ì•ˆì— ë©”ì†Œë“œëŠ” ì´ 3ê°œì˜ ë©”ì†Œë“œê°€ ì¡´ì¬ í•©ë‹ˆë‹¤.
+		 * ë©”ì†Œë“œëª… ê°ê° book1, book2, book3 ìœ¼ë¡œ ì´ë£¨ì–´ì ¸ ìˆìŠµë‹ˆë‹¤.
+		 * book1ì€ í˜¸ì¶œì‹œ "book1ë©”ì†Œë“œ"ë¼ê³  ì¶œë ¥
+		 * book2ì€ í˜¸ì¶œì‹œ "book2ë©”ì†Œë“œ"ë¼ê³  ì¶œë ¥
+		 *book3ì€ í˜¸ì¶œì‹œ "book3ë©”ì†Œë“œ"ë¼ê³  ì¶œë ¥
 		 */
 		books a = new books();
-		a.book1(35);
-		a.book2("¹ÙµÏÀÌ");
-		a.book3("È«±æµ¿",40);
-		int z3 = a.book4(9,20);
-		System.out.println(z3);
+		//a.book1(35);
+		//a.book2("ë°”ë‘‘ì´");
+		//a.book3("í™ê¸¸ë™",40);
+		//int z3 = a.book4(9,20);
+		a.book5(4);
+		
+		//System.out.println(z3);
+		
 		/*
 		int pp = a.book4();
 		System.out.println(pp);
-		*//*return ¸Ş¼Òµå¿¡ ¼ıÀÚ 9¿Í 20À» ÀÎ¼ö°ªÀ» Àü´Ş ÇÕ´Ï´Ù. ÇØ´ç µÎ°³ÀÇ °ªÀ» °öÇÏ¿© °á°ú°ªÀ» Ãâ·ÂÇÏ½Ã¿À.*/
-		/*book5¿¡ ¼ıÀÚ¸¦ ÇÏ³ª ÀÎ¼ö°ªÀ¸·Î Àü´ŞÇÕ´Ï´Ù.
-		 * ÇÏ³ª ÀÎ¼ö°ªÀ» ¹ŞÀº book5¿¡¼­´Â ¹«Á¶°Ç 100,200À» ´õÇÑ °ª°ú ÀÎ¼ö°ªÀ» °öÇÏ¿© °á°ú°ªÀ» Ãâ·ÂÇÏ½Ã¿À
-		 * ÀÎ¼ö°ª : 4
+		*//*return ë©”ì†Œë“œì— ìˆ«ì 9ì™€ 20ì„ ì¸ìˆ˜ê°’ì„ ì „ë‹¬ í•©ë‹ˆë‹¤. í•´ë‹¹ ë‘ê°œì˜ ê°’ì„ ê³±í•˜ì—¬ ê²°ê³¼ê°’ì„ ì¶œë ¥í•˜ì‹œì˜¤.*/
+		/*book5ì— ìˆ«ìë¥¼ í•˜ë‚˜ ì¸ìˆ˜ê°’ìœ¼ë¡œ ì „ë‹¬í•©ë‹ˆë‹¤.
+		 * í•˜ë‚˜ ì¸ìˆ˜ê°’ì„ ë°›ì€ book5ì—ì„œëŠ” ë¬´ì¡°ê±´ 100,200ì„ ë”í•œ ê°’ê³¼ ì¸ìˆ˜ê°’ì„ ê³±í•˜ì—¬ ê²°ê³¼ê°’ì„ ì¶œë ¥í•˜ì‹œì˜¤
+		 * ì¸ìˆ˜ê°’ : 4
 		 * (100+200)*4
-		 * °á°ú : 1200 */
+		 * ê²°ê³¼ : 1200 */
 	}
 
 }
-class books{ //class´Â ¹«Á¶°Ç method°¡ ÀÖ¾î¾ßÇÕ´Ï´Ù.
-	String zz="Á¤´ä";
+class books{ //classëŠ” ë¬´ì¡°ê±´ methodê°€ ìˆì–´ì•¼í•©ë‹ˆë‹¤.
+	String zz="ì •ë‹µ";
+	int c1 = 100+200;
 	
 	
 	
 	public void book1(int a1) {
-		System.out.println(a1+this.zz);
+		//System.out.println(a1+this.zz);
 	}
 	public void book2(String a2) {
-		System.out.println(a2+this.zz);
+		//System.out.println(a2+this.zz);
 	}
 	public void book3(String a3,int a4) {
-		System.out.println(a3+","+a4+this.zz);
+		//System.out.println(a3+","+a4+this.zz);
 	}
 	public int book4(int z1, int z2) {
 		
 		int aaa = z1 * z2;
 		return aaa; //
 	}
-	
-	
+	public void book5(int q1) {
+		System.out.println(this.c1*q1);
+		
+		
+	}
+
 }
