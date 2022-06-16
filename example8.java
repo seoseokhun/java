@@ -6,6 +6,7 @@ public class example8 {
 		
 /*
 [필기시험]
+http://mekeyace.dothome.co.kr/test.pdf
 		 * 1. Editor의 종류?
 		 * 2. Database의 종류?
 		 * 3. java에서 사용하는 자료형이 아닌것은?
