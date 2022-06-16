@@ -32,9 +32,8 @@ public class awt4_class {
 			public void actionPerformed(ActionEvent e) {
 				try {
 				int c = Integer.parseInt(input.getText());
-				de.btn_push(c);
-				lb.setText(de.calls());
-			
+				de.btn_push(c); //사용자가 입력한 값을 btn_push 메소드로 전달
+				lb.setText(de.calls());//awt4.java에 있는 getter 메소드 값 받음
 				}
 				catch (Exception aaaa) {
 					lb.setText("숫자만 입력하세요");
