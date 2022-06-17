@@ -1,4 +1,4 @@
-
+ 
 public class oop4 {
 	//추상 클래스 및 메소드 abstract
 	public static void main(String[] args) {
