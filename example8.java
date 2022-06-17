@@ -21,6 +21,11 @@ http://mekeyace.dothome.co.kr/test.pdf
 		 * 6. 다음 문법 코드 중 잘못된 부분은?
 		 
 		 시험 사이트 http://mekeyace.dothome.co.kr/javatest.txt
+		 example2_db.txt
+
+Arraylist.txt(2차 배열형태)
+
+http://mekeyace.dothome.co.kr
 		 
  [필기시험2]		 
 1. 운영체제 목적
